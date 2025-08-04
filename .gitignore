@@ -1,0 +1,63 @@
+# === Node ===
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# === VSCode ===
+.vscode/
+*.code-workspace
+
+# === OS / System Files ===
+.DS_Store
+Thumbs.db
+
+# === Next.js ===
+.next/
+out/
+.vercel/
+
+# === Logs ===
+logs/
+*.log
+*.log.*
+
+# === Testing & Coverage ===
+coverage/
+test-output/
+jest-output.json
+*.test.ts.snap
+.vitest/
+playwright-report/
+
+# === Build Artifacts ===
+build/
+.cache/
+turbo/
+tmp/
+*.tsbuildinfo
+
+# === Prisma ===
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations/*/README.md
+
+# === Storybook ===
+storybook-static/
+.cache/
+.out/
+
+# === Uploads or Exports (if any) ===
+public/uploads/
+exports/
+
+# === Misc ===
+*.local
+*.bak
+*.swp
+*.zip
+*.tgz
