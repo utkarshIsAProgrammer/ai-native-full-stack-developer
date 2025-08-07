@@ -1,0 +1,189 @@
+# === Node.js ===
+node_modules/
+dist/
+.env
+.env.local
+.env.*.local
+.env.production.local
+.env.development.local
+.env.test.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+pnpm-lock.yaml
+yarn.lock
+
+# === VSCode ===
+# .vscode/
+*.code-workspace
+.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# === OS / System Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# === Next.js ===
+.next/
+out/
+.vercel/
+.swc/
+
+# === React ===
+# build/ (covered in Build Artifacts section)
+
+# === TypeScript ===
+*.tsbuildinfo
+.tsbuildinfo
+
+# === Logs ===
+logs/
+*.log
+*.log.*
+lerna-debug.log*
+
+# === Testing & Coverage ===
+coverage/
+.nyc_output/
+test-output/
+jest-output.json
+*.test.ts.snap
+*.test.js.snap
+.vitest/
+playwright-report/
+test-results/
+playwright/.cache/
+
+# === Build Artifacts ===
+build/
+.cache/
+turbo/
+tmp/
+temp/
+.tmp/
+.temp/
+
+# === Database ===
+# Prisma
+prisma/dev.db
+prisma/dev.db-journal
+prisma/migrations/*/README.md
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# === Authentication & Services ===
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+
+# Supabase
+.supabase/
+
+# === AI & ML ===
+# Python (if using AI tools)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === Storybook ===
+storybook-static/
+.out/
+
+# === Package Manager Alternatives ===
+# Bun
+bun.lockb
+
+# === CI/CD ===
+# GitHub Actions (usually want to keep these)
+# .github/
+
+# === Docker ===
+Dockerfile.dev
+docker-compose.override.yml
+.dockerignore
+
+# === IDE & Editors ===
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# === Security ===
+# Certificate files
+*.pem
+*.key
+*.crt
+*.p12
+
+# SSH
+.ssh/
+
+# === Uploads or Exports ===
+public/uploads/
+uploads/
+exports/
+downloads/
+
+# === Miscellaneous ===
+*.local
+*.bak
+*.backup
+*.swp
+*.zip
+*.tgz
+*.tar.gz
+*.rar
+*.7z
+
+# === Runtime ===
+.pnp
+.pnp.js
+
+# === Package Lock Files (choose one) ===
+# Uncomment the lock file you DON'T want to track
+# package-lock.json  # if using yarn or pnpm
+# yarn.lock         # if using npm or pnpm
+# pnpm-lock.yaml    # if using npm or yarn
+
+# === Local Development ===
+.vite/
+.turbo/
+.parcel-cache/
+
+# === Monitoring & Analytics ===
+.sentryclirc
+.lighthouseci/
