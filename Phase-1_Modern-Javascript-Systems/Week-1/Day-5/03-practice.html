@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Buttons</title>
+    <!-- Tailwind CSS is loaded for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div
+      class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full mx-auto text-center"
+    >
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">Click a Button</h1>
+
+      <div class="flex justify-center space-x-4 mb-6">
+        <!-- Button 1 -->
+        <button
+          id="button1"
+          class="bg-blue-600 text-white font-bold py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300 shadow-md"
+        >
+          Button One
+        </button>
+
+        <!-- Button 2 -->
+        <button
+          id="button2"
+          class="bg-green-600 text-white font-bold py-3 px-6 rounded-md hover:bg-green-700 transition duration-300 shadow-md"
+        >
+          Button Two
+        </button>
+      </div>
+
+      <!-- The paragraph where the message will be displayed -->
+      <p id="message" class="mt-6 text-lg text-gray-700">
+        Click a button to see a message!
+      </p>
+    </div>
+
+    <script>
+      // Get references to the HTML elements
+      const button1 = document.getElementById('button1');
+      const button2 = document.getElementById('button2');
+      const messageParagraph = document.getElementById('message');
+
+      // Define a named function to handle the click for button1
+      function handleButton1Click() {
+        messageParagraph.textContent = 'You clicked Button One!';
+        messageParagraph.className = 'mt-6 text-lg text-blue-600 font-semibold';
+        console.log('Button One was clicked!');
+      }
+
+      // Define a named function to handle the click for button2
+      function handleButton2Click() {
+        messageParagraph.textContent = 'You clicked Button Two!';
+        messageParagraph.className =
+          'mt-6 text-lg text-green-600 font-semibold';
+        console.log('Button Two was clicked!');
+      }
+
+      // Add event listeners using the named functions as callbacks
+      button1.addEventListener('click', handleButton1Click);
+      button2.addEventListener('click', handleButton2Click);
+    </script>
+  </body>
+</html>

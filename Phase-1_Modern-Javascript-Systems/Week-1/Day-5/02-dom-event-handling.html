@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-xl text-center">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">Event Handling Demo</h1>
+
+      <!-- This is the element we will listen for a click event on -->
+      <button
+        id="myButton"
+        class="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300 shadow-md"
+      >
+        Click Me
+      </button>
+
+      <!-- This is the element whose text we will change -->
+      <p id="myParagraph" class="mt-6 text-lg text-gray-700">
+        The button has not been clicked yet.
+      </p>
+    </div>
+
+    <script>
+      // 1. Get references to the HTML elements from the DOM
+      const myButton = document.getElementById('myButton');
+      const myParagraph = document.getElementById('myParagraph');
+
+      // 2. Define the event handler function
+      // This is the function that will be called when the event happens.
+      function handleButtonClick() {
+        myParagraph.textContent = 'You clicked the button!';
+      }
+
+      // 3. Attach the event listener to the button
+      // We're listening for a 'click' event, and we're telling it to call
+      // the 'handleButtonClick' function when that happens.
+      myButton.addEventListener('click', handleButtonClick);
+
+      // We could also write this as an anonymous arrow function directly:
+      // myButton.addEventListener('click', () => {
+      //   myParagraph.textContent = "You clicked the button!";
+      // });
+    </script>
+  </body>
+</html>
